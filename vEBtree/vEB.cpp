@@ -134,6 +134,9 @@ void vEB::insert(ll x){
                 cluster[high(x)]->emptyInsert(low(x));
                 summary->insert(high(x));
             }
+            else {
+                cluster[high(x)]->insert(low(x));
+            }
         }
         if (max < x){
             max = x;
@@ -146,7 +149,7 @@ void vEB::Delete(ll x){
         min = -1;
         max = -1;
     }
-    if (u == 2){            // 本ではelseifにして一行多い
+    else if (u == 2){            // 本ではelseifにして一行多い
         if (x==0) min = 1;
         else max = 0;
     }
@@ -165,7 +168,7 @@ void vEB::Delete(ll x){
                 ll sum_max = summary->maximum();
                 // clusterがすべて空になった場合
                 if (sum_max == -1){
-                    min = max;
+                    max = min;
                 }
                 else{
                     max = index(sum_max, cluster[sum_max]->maximum()); 
