@@ -149,7 +149,7 @@ void vEB::Delete(ll x){
         min = -1;
         max = -1;
     }
-    else if (u == 2){            // 本ではelseifにして一行多い
+    else if (u == 2){            // 本では一行多い
         if (x==0) min = 1;
         else max = 0;
     }

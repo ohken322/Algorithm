@@ -1,13 +1,13 @@
 # README
 
-The implementation of van Emde Boas(vEB) tree following a book *Introduction to Algorithms*.
+The implementation of van Emde Boas(vEB) tree following a book *Introduction to Algorithms* 3rd Edition.
 
 You can play with the vEB tree as much as you want ;)
 
 ## van Emde Boas tree
 vEB tree is a data structure which can be considered as a multi-branch tree, defined and implemented in a recursive way.
 
-It can deal with any subset of {0,1,2,...,u-1} for some fixed power u of 2.
+It can deal with any subset of {0,1,2,...,u-1} for any fixed power u of 2.
 
 vEB tree has its strength on its small computation complexity for various fundamental operations:
 it can execute each of the operation in the list below in O(log log u) time.

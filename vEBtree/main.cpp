@@ -62,6 +62,9 @@ int main(){
         else if(command=="exit"){
             return 0;
         }
+        else{
+            cout << "Command not found." << endl;
+        }
         cout << "-------------------" << endl << ">> ";
     }
 }
